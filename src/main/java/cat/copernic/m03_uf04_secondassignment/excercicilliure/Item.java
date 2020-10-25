@@ -26,7 +26,15 @@ public abstract class Item {
     public Item(double precio, String descripcion, String nombre, int id) {
         this.precio = precio;
         this.descripcion = descripcion;
+
+        if (nombre == " ") {
+            throw new NullPointerException("La variable nombre no puede estar vacia");
+        }
         this.nombre = nombre;
+
+        if (id == 0) {
+            throw new NullPointerException("La variable nombre no puede estar vacia");
+        }
         this.id = id;
     }
 

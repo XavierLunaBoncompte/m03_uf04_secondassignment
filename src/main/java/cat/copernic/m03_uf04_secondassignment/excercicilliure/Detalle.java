@@ -20,7 +20,12 @@ public abstract class Detalle extends Item {
 
     public Detalle(int idDetalle, int cantidadDetalle, double precio, String descripcion, String nombre, int id) {
         super(precio, descripcion, nombre, id);
+
+        if (idDetalle == 0) {
+            throw new NullPointerException("La variable nombre no puede estar vacia");
+        }
         this.idDetalle = idDetalle;
+
         this.cantidadDetalle = cantidadDetalle;
     }
 
