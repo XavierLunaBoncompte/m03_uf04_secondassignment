@@ -43,6 +43,7 @@ public class M03_UF04_SecondAssignment {
         c.añade((Detalle) i1);
         c.elimina((Detalle) i1);
         c.checkout();
+        System.out.println("Commt");
 
     }
 
